@@ -1,0 +1,74 @@
+/* 
+===========================================================
+Title: Common Styles for All Pages
+Description: This CSS file styles all pages for consistent 
+and improved appearance.
+Prepared by: D@VE_HR
+===========================================================
+*/
+
+/* General reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h3 {
+    color: #4a90e2;
+    margin: 20px 0;
+}
+
+/* Form and input styling */
+form {
+    margin: 20px 0;
+    display: inline-block;
+    text-align: left;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #357abd;
+}
+
+/* Link section styling */
+section {
+    margin-top: 30px;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    border: 2px solid#4a90e2;
+    padding: .5rem;
+}
+
+a:hover {
+    color: #357abd;
+}
