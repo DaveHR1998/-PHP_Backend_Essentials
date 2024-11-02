@@ -1,0 +1,141 @@
+/* Resetting default styles */
+* {
+    margin: 0; /* Removes default margin from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    list-style-type: none; /* Removes bullet points from lists */
+    box-sizing: border-box; /* Ensures padding and border are included in element's width and height */
+}
+
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean, sans-serif font */
+    background-color: #f4f4f4; /* Light grey background for the whole page */
+    color: #333; /* Dark grey color for the main text */
+}
+
+/* Header styling */
+header {
+    display: flex; /* Sets up flexbox for horizontal layout */
+    justify-content: space-between; /* Spreads elements across the header */
+    align-items: center; /* Vertically centers items within the header */
+    background-color: #333; /* Dark background for the header */
+    padding: 1rem 2rem; /* Adds padding around the header content */
+    color: #fff; /* Sets text color to white for contrast */
+}
+
+header h1 {
+    font-size: 1.5rem; /* Increases the font size of the header title */
+    color: #fff; /* Ensures title color matches the header's theme */
+}
+
+/* Navigation menu styling */
+header ul {
+    display: flex; /* Horizontally arranges list items */
+}
+
+header ul li {
+    margin-left: 1.5rem; /* Adds space between navigation links */
+    color: #fff; /* White text for navigation links */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-weight: bold; /* Boldens the text for emphasis */
+    transition: color 0.3s; /* Smooth color transition effect on hover */
+}
+
+header ul li:hover {
+    color: #ff9900; /* Changes text color on hover for interaction feedback */
+}
+
+/* Main section styling */
+section {
+    display: grid; /* Sets up a grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
+    gap: 2rem; /* Space between grid items */
+    padding: 2rem; /* Adds padding around the section */
+    background-color: #e0e7ff; /* Light blue background for the section */
+}
+
+/* Styling for individual product items */
+.item {
+    background: #fff; /* White background for each product card */
+    border-radius: 8px; /* Rounds the corners of each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
+    overflow: hidden; /* Ensures content doesn't overflow rounded corners */
+    text-align: center; /* Centers text within the item */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transform and shadow transitions on hover */
+}
+
+.item:hover {
+    transform: translateY(-5px); /* Slightly lifts the item on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a stronger shadow on hover */
+}
+
+.item img {
+    width: 100%; /* Ensures image takes full width of the container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 200px; /* Limits image height */
+    object-fit: cover; /* Crops the image to fit container */
+}
+
+.item h3 {
+    margin: 1rem 0; /* Adds space above and below the title */
+    font-size: 1.2rem; /* Sets font size for item title */
+    color: #333; /* Dark color for text contrast */
+}
+
+/* Styling for the "Buy now" button */
+.item button {
+    background-color: #ff9900; /* Orange background for the button */
+    color: #fff; /* White text for contrast */
+    border: none; /* Removes default border */
+    padding: 0.8rem 1.5rem; /* Adds padding around the button */
+    border-radius: 4px; /* Slightly rounds button corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: background-color 0.3s; /* Smooth transition for background color on hover */
+    margin-bottom: 1rem; /* Adds space below button */
+}
+
+.item button:hover {
+    background-color: #e07b00; /* Darker orange on hover */
+}
+
+/* Responsive adjustments for tablets and smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stacks header items vertically */
+        align-items: center; /* Centers items in header */
+        text-align: center; /* Centers text in header */
+    }
+    
+    header ul {
+        flex-direction: column; /* Stacks navigation links vertically */
+        margin-top: 1rem; /* Adds space above navigation links */
+    }
+
+    header ul li {
+        margin: 0.5rem 0; /* Adds space between vertically stacked links */
+    }
+
+    section {
+        padding: 1rem; /* Reduces padding in smaller screens */
+    }
+}
+
+/* Additional responsive adjustments for mobile screens */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem; /* Reduces title font size on smaller screens */
+    }
+
+    .item {
+        margin: 1rem auto; /* Centers items with reduced margin */
+    }
+
+    .item h3 {
+        font-size: 1rem; /* Smaller font size for item titles */
+    }
+
+    .item button {
+        padding: 0.6rem 1.2rem; /* Reduces button padding */
+    }
+}
