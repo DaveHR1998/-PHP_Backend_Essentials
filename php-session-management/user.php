@@ -19,7 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Profile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- User Profile Update Form -->
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
